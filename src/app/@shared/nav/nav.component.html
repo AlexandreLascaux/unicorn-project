@@ -1,0 +1,38 @@
+<mat-sidenav-container style="height:100%">
+  <mat-sidenav id="sidenav" #drawer mode="side" opened role="navigation">
+    <mat-list>
+        <mat-nav-list>
+          <mat-list-item (click)="isExpanded = !isExpanded">
+            <mat-icon matListIcon *ngIf="!isExpanded">menu</mat-icon>
+            <mat-icon matListIcon *ngIf="isExpanded">menu_open</mat-icon>
+          </mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item routerLink="/" routerLinkActive="active-list-item">
+            <mat-icon matListIcon>home</mat-icon>
+            <h3 matLine *ngIf="isExpanded">Home</h3>
+          </mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item routerLink="/create-unicorn" routerLinkActive="active-list-item">
+            <mat-icon matListIcon>add</mat-icon>
+            <h3 matLine *ngIf="isExpanded">Create</h3>
+          </mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item routerLink="/love-unicorn" routerLinkActive="active-list-item">
+            <mat-icon matListIcon>favorite</mat-icon>
+            <h3 matLine *ngIf="isExpanded">Love</h3>
+          </mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item routerLink="/unishop" routerLinkActive="active-list-item">
+            <mat-icon matListIcon>store</mat-icon>
+            <h3 matLine *ngIf="isExpanded">Uni'shop</h3>
+          </mat-list-item>
+          <mat-divider></mat-divider>
+        </mat-nav-list>
+      </mat-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="sidenav-content">
+        <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

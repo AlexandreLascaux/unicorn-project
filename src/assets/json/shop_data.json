@@ -1,0 +1,32 @@
+[
+   {
+    "id": 0,
+    "name": "hay",
+    "price": 3,
+    "photo": "https://bluevaulthay.ca/wp-content/uploads/hay-bale-1.jpg"
+   },
+   {
+    "id": 1,
+    "name": "marshmallow",
+    "price": 2,
+    "photo": "https://cdn.store-factory.com/www.confiserie-foraine.com/content/product_7447763b.jpg?v=1529996930"
+   },
+   {
+    "id": 2,
+    "name": "glitter",
+    "price": 0.5,
+    "photo": "https://www.makeupforever.com/dw/image/v2/BCRL_PRD/on/demandware.static/-/Sites-Makeupforever_master_catalog/default/dwb663b604/images/I000036101/3548752135702_I000036101_Small--Size-Gliters-6.7G%20--S101_swatch_Face_1.jpg?sw=800&sh=800"
+   },
+   {
+    "id": 3,
+    "name": "carrot",
+    "price": 1,
+    "photo": "http://sc04.alicdn.com/kf/U2b2e2d0ffc4e4fed9a338a93d2ba1382n.jpg"
+   },
+   {
+    "id": 4,
+    "name": "slime",
+    "price": 9,
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0mFfgeeFOvaUoe056FlTz1QlLQxdkzTQeXg&usqp=CAU"
+   }
+]

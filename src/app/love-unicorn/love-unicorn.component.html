@@ -1,0 +1,38 @@
+<div class="container">
+  <h1 class="title">Unicorn love</h1>
+  <form class="form-love-container" [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
+    <mat-form-field appearance="fill">
+      <mat-label>Parent 1</mat-label>
+      <mat-select name="gender" formControlName="parentUnicorn1" required>
+        <mat-option *ngFor="let unicorn of unicorns" [value]="unicorn">
+          {{ unicorn.name }} - {{ unicorn.gender }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Parent 2</mat-label>
+      <mat-select name="gender" formControlName="parentUnicorn2" required>
+        <mat-option *ngFor="let unicorn of unicorns" [value]="unicorn">
+          {{ unicorn.name }} - {{ unicorn.gender }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <button mat-flat-button type="submit" color="primary" [disabled]="myForm.invalid">
+      <mat-icon>save</mat-icon> Save
+    </button>
+  </form>
+
+  <div class="baby-unicorn-container" *ngIf="isBabyUnicorn">
+    <h1 class="title">Their baby</h1>
+    <div class="unicorn-summary-container">
+      <app-unicorn-summary class="unicorn-summary" [unicorn]="babyUnicorn"></app-unicorn-summary>
+      <button mat-flat-button color="primary" (click)="saveBabyUnicorn(babyUnicorn)">
+        <mat-icon>save</mat-icon> Save?
+      </button>
+    </div>
+  </div>
+
+  <div class="gender-error-container" *ngIf="isGenderError">
+    <p>Only one male and one female can make a baby unicorn</p>
+  </div>
+</div>

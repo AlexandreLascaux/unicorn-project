@@ -1,0 +1,29 @@
+@import '../../../theme/theme-variables.scss';
+
+.header {
+  height: 50px;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 0px;
+  background-color: #fff;
+  position: relative;
+  z-index: 9;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border-bottom: #000 solid 2px;
+
+  .site_title {
+    order: 2;
+    align-self: center;
+
+    span {
+      color: #000;
+      font-size: 40px;
+      font-family: 'paradise';
+    }
+  }
+}
