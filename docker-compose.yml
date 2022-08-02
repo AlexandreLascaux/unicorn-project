@@ -1,0 +1,12 @@
+version: '1'
+services:
+  angular-ui:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "4201:4201"
+    container_name: unicorn-app
+    volumes:
+       - ./:/usr/src/app/
+       - /usr/src/app/node_modules

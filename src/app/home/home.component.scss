@@ -1,0 +1,40 @@
+.container {
+  margin-top: 10px;
+  padding-right: 10px;
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+
+  .title {
+    font-family: 'paradise';
+    font-size: 30px;
+  }
+
+  .no-data {
+    position: fixed; /* or absolute */
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+  }
+
+  .no-data-text {
+    font-family: 'paradise', no-serif;
+    font-size: 50px;
+  }
+
+  .unicorn-summary-container {
+    height: fit-content;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+
+    .unicorn-summary {
+      margin: 10px;
+    }
+  }
+}
+
+
+

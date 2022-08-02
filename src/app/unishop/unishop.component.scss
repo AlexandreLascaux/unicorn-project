@@ -1,0 +1,62 @@
+.navbar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  background-color: #fff;
+
+  .title {
+    font-family: 'paradise', noserif;
+    font-size: 30px;
+  }
+
+  .cart {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding: 7px 10px;
+    border-radius: 10px;
+
+    .icon {
+      margin-right: 5px;
+    }
+  }
+}
+
+.second-title-container {
+  text-align: center;
+  margin: 25px 0px 15px 0px;
+
+  .second-title {
+    font-family: 'paradise', noserif;
+    font-size: 25px;
+  }
+}
+
+.products-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+
+  .product {
+    margin: 10px;
+
+    .product-photo {
+      width: 300px;
+    }
+
+    .product-info-container {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+
+}
+
+

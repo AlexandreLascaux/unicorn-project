@@ -1,0 +1,27 @@
+/*
+ * Global application theme.
+ * Framework overrides and customization goes here.
+ */
+
+// stylelint-disable-next-line selector-max-universal
+@font-face {
+  font-family: 'paradise';
+  src: url('../assets/font/paradise-webfont.woff2') format('woff2'),
+       url('../assets/font/paradise-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'paradise', no-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  height: 100%;
+}

@@ -1,0 +1,35 @@
+.container {
+  margin-top: 20px;
+  padding-right: 10px;
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+
+  .title {
+    font-family: 'paradise';
+    font-size: 30px;
+  }
+
+  .form-love-container {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  .baby-unicorn-container {
+    margin-top: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    .unicorn-summary-container {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      .unicorn-summary {
+        margin-right: 20px;
+      }
+    }
+  }
+}

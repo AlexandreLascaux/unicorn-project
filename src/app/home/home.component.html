@@ -1,0 +1,10 @@
+<div class="container">
+  <h1 class="title">Home</h1>
+  <div class="no-data" *ngIf="!isUnicornSaved">
+    <span class="no-data-text">There is no unicorn</span>
+  </div>
+  <div class="unicorn-summary-container">
+    <app-unicorn-summary class="unicorn-summary" *ngFor="let unicorn of unicorns" [unicorn]="unicorn">
+    </app-unicorn-summary>
+  </div>
+</div>
